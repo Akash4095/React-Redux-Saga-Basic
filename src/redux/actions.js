@@ -1,8 +1,9 @@
+import { ADD_TO_CART } from "./types"
 
-export const addToCart = (data) => {
+export const addToCart = (props) => {
     console.warn("action called", data)
     return {
-        type:"Add_To_Cart",
-        data:data
+        type:ADD_TO_CART,
+        data:props
     }
 }
