@@ -1,21 +1,16 @@
 import logo from './logo.svg';
 import './App.css';
-import { addToCart } from './redux/actions'
-import { useDispatch } from 'react-redux';
+
+import Header from './components/Header';
+import Main from './components/Main';
 
 function App() {
 
-  const dispatch = useDispatch()
-  const product={
-    name:"I Phone",
-    type:"mobile",
-    price:100000,
-    color:"red"
 
-  }
   return (
     <div className="App">
-      <button onClick={() => dispatch(addToCart(product))} >Add addTo Cart</button>
+      <Header />
+      <Main />
     </div>
   );
 }

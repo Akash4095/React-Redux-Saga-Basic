@@ -1,1 +1,5 @@
 export const ADD_TO_CART = "ADD_TO_CART"
+export const REMOVE_TO_CART = "REMOVE_TO_CART"
+export const EMPTY_CART = "EMPTY_CART"
+export const ADD_PRDOUCTS = "ADD_PRDOUCTS"
+export const REMOVE_PODUCTS = "REMOVE_PODUCTS"
