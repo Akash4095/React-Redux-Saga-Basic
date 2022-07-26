@@ -1,17 +1,18 @@
 
 
 const productData = (state = {}, action) => {
-console.log(action)
+    console.log(action)
     switch (action.type) {
-        case "ADD_PRODUCT":
-            console.log("add to product called", action)
-            return [...state, action.data]
+        // case "ADD_PRODUCT":
+        //     console.log("add to product called", action)
+        //     return [...state, action.data]
 
-        case "REMOVE_TO_CART":
-            console.log("remove products called", action)
-            state.length = state.length ? state.length - 1 : null
-            return [...state]
-    
+        // ADD_PRODUCTS iscalled in sagas 
+
+        case "SAVE_PRODUCTS":
+            console.log("products saved in reducer", action.data)
+            return [...action.data]
+
         default:
 
             return state

@@ -1,4 +1,4 @@
-import { ADD_TO_CART,REMOVE_TO_CART,EMPTY_CART, ADD_PRDOUCTS, REMOVE_PODUCTS } from "./types"
+import { ADD_TO_CART,REMOVE_TO_CART,EMPTY_CART, ADD_PRODUCTS, SAVE_PRODUCTS } from "./types"
 
 export const addToCart = (props) => {
     console.warn("action called", props)
@@ -27,14 +27,7 @@ export const emptyCart = (props) => {
 export const addProducts =(props)=>{
     console.log(props)
     return {
-        type:ADD_PRDOUCTS,
-        data:props
-    }
-}
-
-export const removeProducts =(props)=>{
-    return {
-        type:ADD_PRDOUCTS,
+        type:ADD_PRODUCTS,
         data:props
     }
 }
