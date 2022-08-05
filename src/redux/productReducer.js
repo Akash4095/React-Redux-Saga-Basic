@@ -1,6 +1,6 @@
 
 
-const productData = (state = {}, action) => {
+const productData = (state = [], action) => {
     console.log(action)
     switch (action.type) {
         // case "ADD_PRODUCT":

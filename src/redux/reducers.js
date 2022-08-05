@@ -19,12 +19,15 @@ const cartData = (state = [], action) => {
     switch (action.type) {
         case "ADD_TO_CART":
             console.log("add to cart called", action)
-            return [...state, action.state]
+            return [...state, action.data]
 
         case "REMOVE_TO_CART":
             console.log("remove to cart called", action)
-            state.length = state.length ? state.length - 1 : null
-            return [...state]
+            console.log(action.data,'-------action')
+            // state.length = state.length ? state.length - 1 : null
+            const removed = state.filter((item)=> item.id !== action.data)
+            // return [...state]
+            return [...removed]
         case "EMPTY_CART":
             console.log("empty to cart called", action)
             return []
