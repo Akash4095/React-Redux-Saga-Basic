@@ -89,3 +89,19 @@
   left: 15px;
 }
 
+
+/* seacrh boc style */
+
+.search-box{
+  float: left;
+  padding: 25px;
+  width: 65%;
+}
+
+.search-box input{
+  width: 50%;
+  height: 30px;
+  padding-left: 10px;
+  border: 1px solid #777;
+}
+
